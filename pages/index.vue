@@ -237,7 +237,6 @@
               href="./documents/status"
               target="_blank"
               rel="noopener noreferrer"
-              class="link__label"
             >
               Status
             </a>
@@ -248,38 +247,73 @@
               href="./documents/privacy"
               target="_blank"
               rel="noopener noreferrer"
-              class="link__label"
             >
               Privacy & Terms
             </a>
           </li>
 
           <li class="copyright__document">
-            <a
-              href="./contact-us"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="link__label"
-            >
+            <a href="./contact-us" target="_blank" rel="noopener noreferrer">
               Contact us
             </a>
           </li>
         </ul>
+
         <ul class="social__list">
           <li class="social__item">
-            <img class="social__icon" src="../assets/icons/facebook.svg" />
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="social__icon"
+                src="../assets/icons/facebook.svg"
+                alt="Facebook logo"
+              />
+            </a>
           </li>
 
           <li class="social__item">
-            <img class="social__icon" src="../assets/icons/linkedin.svg" />
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="social__icon"
+                src="../assets/icons/linkedin.svg"
+                alt="LinkedIn logo"
+              />
+            </a>
           </li>
 
           <li class="social__item">
-            <img class="social__icon" src="../assets/icons/twitter.svg" />
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="social__icon"
+                src="../assets/icons/twitter.svg"
+                alt="Twitter logo"
+              />
+            </a>
           </li>
 
           <li class="social__item">
-            <img class="social__icon" src="../assets/icons/youtube.svg" />
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="social__icon"
+                src="../assets/icons/youtube.svg"
+                alt="Youtube logo"
+              />
+            </a>
           </li>
         </ul>
       </div>
@@ -567,7 +601,6 @@ section {
 .copyright__document:last-child {
   margin-right: 0;
 }
-
 
 .social__list {
   display: inline-flex;
