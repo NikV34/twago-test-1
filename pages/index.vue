@@ -1,12 +1,14 @@
 <template>
   <div class="container">
     <header class="header__wrapper">
-      <div class="logo__wrapper">
-        <div class="circle__wrapper">
-          <span class="circle__icon"></span>
+      <a href="/" rel="noopener noreferrer">
+        <div class="logo__wrapper">
+          <div class="circle__wrapper">
+            <span class="circle__icon"></span>
+          </div>
+          <p class="logo__label">↘ACME</p>
         </div>
-        <p class="logo__label">↘ACME</p>
-      </div>
+      </a>
       <div class="auth__wrapper">
         <button class="auth__btn">Login</button>
       </div>
@@ -95,15 +97,18 @@
         </div>
         <div class="text-block__label">150 CC</div>
       </div>
+
     </section>
     <footer>
       <div class="footer__wrapper">
-        <div class="logo__wrapper">
-          <div class="circle__wrapper">
-            <span class="circle__icon"></span>
+        <a href="/" rel="noopener noreferrer">
+          <div class="logo__wrapper">
+            <div class="circle__wrapper">
+              <span class="circle__icon"></span>
+            </div>
+            <p class="logo__label">↘ACME</p>
           </div>
-          <p class="logo__label">↘ACME</p>
-        </div>
+        </a>
         <ul class="link__list">
           <li class="link__column">
             <ul>
@@ -445,6 +450,7 @@ button:focus {
 
 .logo__label {
   display: block;
+  margin-top: 2px;
 }
 
 .h1__subtitle {
