@@ -349,6 +349,26 @@
 </script>
 
 <style>
+@font-face {
+  font-family: "Inter UI";
+  font-style: normal;
+  font-weight: 400;
+  src: url("~assets/fonts/Inter-UI-Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter UI";
+  font-style: normal;
+  font-weight: 500;
+  src: url("~assets/fonts/Inter-UI-Medium.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter UI";
+  font-style: normal;
+  font-weight: bold;
+  src: url("~assets/fonts/Inter-UI-Bold.otf") format("truetype");
+}
 /*---------------
   #Variables
 ---------------*/
@@ -387,7 +407,6 @@ button:focus {
   outline: none;
 }
 
-
 /*---------------
   #Container
 ---------------*/
@@ -405,7 +424,6 @@ button:focus {
     padding: 0 16px;
   }
 }
-
 
 /*---------------
     #Header
@@ -426,7 +444,6 @@ button:focus {
     padding: 16px 16px;
   }
 }
-
 
 /*---------------
     #Auth-btn
@@ -453,7 +470,6 @@ button:focus {
   }
 }
 
-
 /*---------------
     #Logo
 ---------------*/
@@ -466,7 +482,6 @@ button:focus {
   display: block;
   margin-top: 2px;
 }
-
 
 /*---------------
   #Circle-icon
@@ -515,7 +530,6 @@ button:focus {
   border-bottom-right-radius: 36px;
 }
 
-
 /*---------------
   #Headlines
 ---------------*/
@@ -549,7 +563,6 @@ button:focus {
     font-size: 18px;
   }
 }
-
 
 /*---------------
 #Block-list (table)
@@ -628,7 +641,6 @@ button:focus {
   }
 }
 
-
 /*---------------
   #Text-block
 ---------------*/
@@ -662,7 +674,6 @@ button:focus {
     top: -12px;
   }
 }
-
 
 /*---------------
     #Slider
@@ -698,19 +709,19 @@ button:focus {
 }
 
 #slider .slide-1 {
-  background: url("../assets/images/slider/slide-1.jpg");
+  background: url("../static/images/slider/slide-1.jpg");
   background-position: center center;
   background-size: cover;
 }
 
 #slider .slide-2 {
-  background: url("../assets/images/slider/slide-2.jpg");
+  background: url("../static/images/slider/slide-2.jpg");
   background-position: center center;
   background-size: cover;
 }
 
 #slider .slide-3 {
-  background: url("../assets/images/slider/slide-3.jpg");
+  background: url("../static/images/slider/slide-3.jpg");
   background-position: center center;
   background-size: cover;
 }
@@ -730,7 +741,6 @@ button:focus {
     margin-bottom: 30px;
   }
 }
-
 
 /*---------------
     #Footer
@@ -756,7 +766,6 @@ button:focus {
     margin-bottom: 30px;
   }
 }
-
 
 /*---------------
   #Footer-links
@@ -791,7 +800,6 @@ button:focus {
     width: 100%;
   }
 }
-
 
 /*---------------
     #Copyright
@@ -831,7 +839,6 @@ button:focus {
   }
 }
 
-
 /*---------------
     #Social
 ---------------*/
@@ -848,6 +855,4 @@ button:focus {
   height: 24px;
   width: 24px;
 }
-
-
 </style>
