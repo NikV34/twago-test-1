@@ -13,6 +13,7 @@
         <button class="auth__btn">Login</button>
       </div>
     </header>
+
     <section>
       <div class="h1__wrapper">
         <p class="h1__subtitle">Coffer maroon killick bilge list driver</p>
@@ -97,7 +98,25 @@
         </div>
         <div class="text-block__label">150 CC</div>
       </div>
+    </section>
 
+    <section>
+      <div class="slider__wrapper">
+        <div id="slider">
+          <div>
+            <img src="../assets/images/slider/slide-1.jpg" alt="Slide 1" />
+            <img src="../assets/images/slider/slide-2.jpg" alt="Slide 2" />
+            <img src="../assets/images/slider/slide-3.jpg" alt="Slide 3" />
+          </div>
+          <!-- duplicate -->
+          <div>
+            <img src="../assets/images/slider/slide-1.jpg" alt="Slide 1" />
+            <img src="../assets/images/slider/slide-2.jpg" alt="Slide 2" />
+            <img src="../assets/images/slider/slide-3.jpg" alt="Slide 3" />
+          </div>
+          <!-- end duplicate -->
+        </div>
+      </div>
     </section>
     <footer>
       <div class="footer__wrapper">
@@ -368,6 +387,7 @@ button:focus {
   background-color: #ffdb04;
   padding-right: 82px;
   padding-left: 50px;
+  overflow: hidden;
 }
 
 .header__wrapper {
@@ -375,8 +395,7 @@ button:focus {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-left: -50px;
-  margin-right: -82px;
+  margin: 0 -82px 64px -50px;
   padding: 18px 40px 19px 50px;
   box-shadow: inset 0 -3px 0 0 var(--dark-grey);
 }
@@ -543,11 +562,6 @@ button:focus {
   line-height: 16px;
 }
 
-section {
-  padding-top: 64px;
-  margin-bottom: 458px;
-}
-
 .footer__wrapper {
   display: flex;
   flex-direction: row;
@@ -625,4 +639,47 @@ section {
   height: 24px;
   width: 24px;
 }
+
+
+/* SLIDER START */
+
+.slider__wrapper {
+  position: relative;
+  height: 271px;
+  margin-bottom: 80px;
+}
+
+#slider {
+  display: inline-flex;
+  flex-direction: row;
+  position: absolute;
+  animation: 10s slider infinite;
+  animation-timing-function: linear;
+}
+
+#slider:hover {
+  animation-play-state: paused;
+}
+
+#slider div {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+#slider img {
+  width: 576px;
+  margin-right: 13px;
+}
+
+@keyframes slider {
+  0% {
+    left: -37px;
+  }
+  100% {
+    left: -1804px;
+  }
+}
+
+/* SLIDER END */
+
 </style>
