@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://twago-test-1.herokuapp.com/sitemap.xml
