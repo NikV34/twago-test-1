@@ -104,17 +104,17 @@
       <div class="slider__wrapper">
         <div id="slider">
           <div>
-            <img src="../assets/images/slider/slide-1.jpg" alt="Slide 1" />
-            <img src="../assets/images/slider/slide-2.jpg" alt="Slide 2" />
-            <img src="../assets/images/slider/slide-3.jpg" alt="Slide 3" />
+            <span class="slider__image slide-1"></span>
+            <span class="slider__image slide-2"></span>
+            <span class="slider__image slide-3"></span>
           </div>
           <!-- duplicate -->
           <div>
-            <img src="../assets/images/slider/slide-1.jpg" alt="Slide 1" />
-            <img src="../assets/images/slider/slide-2.jpg" alt="Slide 2" />
-            <img src="../assets/images/slider/slide-3.jpg" alt="Slide 3" />
+            <span class="slider__image slide-1"></span>
+            <span class="slider__image slide-2"></span>
+            <span class="slider__image slide-3"></span>
           </div>
-          <!-- end duplicate -->
+          <!-- duplicate -->
         </div>
       </div>
     </section>
@@ -349,8 +349,22 @@
 </script>
 
 <style>
+/*---------------
+  #Variables
+---------------*/
 :root {
   --dark-grey: #29394a;
+  --slide-width: 576px;
+  --slide-margin-right: 13px;
+}
+
+/* reset to default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 body {
@@ -367,13 +381,7 @@ a {
   color: inherit;
 }
 
-p {
-  margin: 0;
-}
-
 ul {
-  padding: 0;
-  margin: 0;
   list-style: none;
 }
 
@@ -381,6 +389,9 @@ button:focus {
   outline: none;
 }
 
+/*---------------
+  #Container
+---------------*/
 .container {
   max-width: 1024px;
   margin: 0 auto;
@@ -390,6 +401,10 @@ button:focus {
   overflow: hidden;
 }
 
+
+/*---------------
+    #Header
+---------------*/
 .header__wrapper {
   display: flex;
   flex-direction: row;
@@ -400,6 +415,10 @@ button:focus {
   box-shadow: inset 0 -3px 0 0 var(--dark-grey);
 }
 
+
+/*---------------
+    #Auth-btn
+---------------*/
 .auth__wrapper {
   margin-top: -5px;
 }
@@ -416,20 +435,31 @@ button:focus {
   cursor: pointer;
 }
 
+
+/*---------------
+    #Logo
+---------------*/
 .logo__wrapper {
   display: flex;
   align-items: center;
 }
 
+.logo__label {
+  display: block;
+  margin-top: 2px;
+}
+
+
+/*---------------
+  #Circle-icon
+---------------*/
 .circle__wrapper {
   margin-right: 10px;
 }
 
 .circle__icon {
   display: block;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+
   width: 36px;
   height: 36px;
   -moz-border-radius: 36px;
@@ -467,11 +497,10 @@ button:focus {
   border-bottom-right-radius: 36px;
 }
 
-.logo__label {
-  display: block;
-  margin-top: 2px;
-}
 
+/*---------------
+  #Headlines
+---------------*/
 .h1__subtitle {
   font-weight: bold;
   margin-bottom: 6px;
@@ -490,9 +519,12 @@ button:focus {
   line-height: 36px;
 }
 
+
+/*---------------
+#Block-list (table)
+---------------*/
 .block-list__wrapper {
   display: flex;
-  box-sizing: border-box;
   flex-wrap: wrap;
   margin-left: 3px;
   margin-bottom: 70px;
@@ -501,7 +533,6 @@ button:focus {
 .block-list__item {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
   height: 388px;
   border: 3px solid var(--dark-grey);
   width: 447px;
@@ -545,6 +576,10 @@ button:focus {
   margin-left: 58px;
 }
 
+
+/*---------------
+  #Text-block
+---------------*/
 .text-block__wrapper {
   position: relative;
   margin-bottom: 108px;
@@ -562,6 +597,10 @@ button:focus {
   line-height: 16px;
 }
 
+
+/*---------------
+    #Footer
+---------------*/
 .footer__wrapper {
   display: flex;
   flex-direction: row;
@@ -572,6 +611,10 @@ button:focus {
   padding-bottom: 56px;
 }
 
+
+/*---------------
+  #Footer-links
+---------------*/
 .link__list {
   display: inline-flex;
   margin-right: 1px;
@@ -600,6 +643,10 @@ button:focus {
   font-weight: 500;
 }
 
+
+/*---------------
+    #Copyright
+---------------*/
 .copyright__wrapper {
   padding-top: 24px;
   padding-bottom: 39px;
@@ -622,6 +669,10 @@ button:focus {
   margin-right: 0;
 }
 
+
+/*---------------
+    #Social
+---------------*/
 .social__list {
   display: inline-flex;
   margin-right: 2px;
@@ -641,8 +692,9 @@ button:focus {
 }
 
 
-/* SLIDER START */
-
+/*---------------
+    #Slider
+---------------*/
 .slider__wrapper {
   position: relative;
   height: 271px;
@@ -666,20 +718,40 @@ button:focus {
   flex-direction: row;
 }
 
-#slider img {
-  width: 576px;
-  margin-right: 13px;
+#slider .slider__image {
+  display: flex;
+  width: var(--slide-width);
+  height: 271px;
+  margin-right: var(--slide-margin-right);
+}
+
+#slider .slide-1 {
+  background: url("../assets/images/slider/slide-1.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+#slider .slide-2 {
+  background: url("../assets/images/slider/slide-2.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+#slider .slide-3 {
+  background: url("../assets/images/slider/slide-3.jpg");
+  background-position: center center;
+  background-size: cover;
 }
 
 @keyframes slider {
   0% {
-    left: -37px;
+    left: calc(var(--slide-margin-right) - 50px);
   }
+  /* -(slides number * slide width) - ((slides number - 1) * margin right) - (container padding) */
   100% {
-    left: -1804px;
+    left: calc(-3 * var(--slide-width) - 2 * var(--slide-margin-right) - 50px);
   }
 }
 
-/* SLIDER END */
 
 </style>
